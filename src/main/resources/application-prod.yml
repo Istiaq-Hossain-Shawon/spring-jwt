@@ -1,0 +1,10 @@
+server:
+    port: 8096
+    servlet:
+      context-path: /spring-jwt
+         
+security:
+  jwt:
+    token:
+      secret-key: 86a5fbbb-13a6-4492-ad18-4ebd9b5046bc
+      expire-length: 3600000

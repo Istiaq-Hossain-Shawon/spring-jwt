@@ -1,0 +1,27 @@
+server:
+    port: 8095
+    servlet:
+      context-path: /spring-jwt
+         
+security:
+  jwt:
+    token:
+      secret-key: 86a5fbbb-13a6-4492-ad18-4ebd9b5046bc
+      expire-length: 3600000
+      
+logging:
+  level:
+    org.springframework.ws: DEBUG
+    org.apache.http: ERROR
+    javax.net: ERROR
+    sun.security.ssl: DEBUG
+    sun.net: ERROR
+    com.seblit: TRACE
+    org.springframework.web: DEBUG
+    java.security: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE   
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+    org.apache.http.wire: ERROR
+
+    
